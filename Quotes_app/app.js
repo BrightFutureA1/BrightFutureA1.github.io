@@ -67,6 +67,8 @@ $(() => {
         $modalLove.css('display', 'block');
 
     }
+
+
     const $openBtnHappy=$('#openModalHappy');
     const $modalHappy = $('#modalHappy');
     const $closeBtnHappy = $('#close-happy');
@@ -84,13 +86,13 @@ $(() => {
 
     //     getQuotes()
 
-    // })
-    // $('#search').on('click', (event) => {
-    //     event.preventDefault()
-    //     getTopic()
-    //     getQuotes()
-    //     searchForQuotes()
-    // })
+    })
+    $('#search').on('click', (event) => {
+        event.preventDefault()
+        getTopic()
+        getQuotes()
+        searchForQuotes()
+    })
     // $('#love').on('click', (event) => {
     //     event.preventDefault()
     //     // getTopic()
