@@ -37,32 +37,72 @@ const searchForQuotes = () => {
         url: `https://api.adviceslip.com/advice/search/` + topic
 
     }).then((data) => {
-        console.log(data.message.text)
-        // if(data.message.text === 'No advice slips found matching that search term.') {
+        console.log(data)
+        // if(data.message.text === 'No advice slips found matching that search term.') 
         //     console.log('broken')
-        })
-        const h3forTopic = $('<h3>').text(data.slips[0].advice)
-        // console.log(h3forQuote)
+        const randomNumber = Math.random(Math.floor()* data.slips.length)
+        console.log(data.slips.length)
+
+        const h3forTopic = $('<h3>').text(data.slips.advice)
+        console.log(h3forTopic)
         $('.container').append(h3forTopic)
-        
-   
+    })
+}
+
+
 
 
 
 $(() => {
+    const $openBtnLove=$('#openModalLove');
+    const $modalLove = $('#modalLove');
+    const $closeBtnLove = $('#close-love');
 
-    $('#quoteOftheDay').on('click', (event) => {
-        event.preventDefault()
+    const openModalLove=()=>{
         
-        getQuotes()
-        
-    })
-    $('#search').on('click', (event) => {
-        event.preventDefault()
-        getTopic()
-        searchForQuotes()
-    })
+        $modalLove.css('display', 'block')
+    
+    }
+    const closeModalLove = () => {
+        $modalLove.css('display', 'block');
+
+    }
+    const $openBtnHappy=$('#openModalHappy');
+    const $modalHappy = $('#modalHappy');
+    const $closeBtnHappy = $('#close-happy');
+
+    const openModalHappy=()=>{
+        $modalHappy.css('display', 'block')
+    }
+    const closeModalHappy = () => {
+        $modalHappy.css('display', 'block');
+
+    }
+
+    // $('#quoteOftheDay').on('click', (event) => {
+    //     event.preventDefault()
+
+    //     getQuotes()
+
+    // })
+    // $('#search').on('click', (event) => {
+    //     event.preventDefault()
+    //     getTopic()
+    //     getQuotes()
+    //     searchForQuotes()
+    // })
+    // $('#love').on('click', (event) => {
+    //     event.preventDefault()
+    //     // getTopic()
+    //     searchForQuotes()
+    $openBtnLove.on('click', openModalLove);
+    $closeBtnLove.on('click', closeModalLove);
+
+    $openBtnHappy.on('click', openModalHappy);
+    $closeBtnHappy.on('click', closeModalHappy);
+
 })
+
 
 
 

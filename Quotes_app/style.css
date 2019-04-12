@@ -1,12 +1,77 @@
 .h1 {
   font-style: italic;
   text-align:center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 }
 
 body {
-    background-color: yellow;
+    background-color: purple;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-image: url("https://i.imgur.com/cItovR3.png?1" );
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-position: center;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#modalLove {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts the modal in front of the body (which has a default z-index setting of `0`*/
+	/* overflow: auto; */
+  /*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+  display: none;
+}
+
+#modalHappy {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts the modal in front of the body (which has a default z-index setting of `0`*/
+	/* overflow: auto; */
+  /*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+  display: none;
+}
+
+#text-box-love {
+  display: inherit;
+	background-color: blue;
+	height: 350px;
+	width: 550px;
+  border-radius: 2px;
+  margin: 150px;
+  box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+}
+
+#text-box-happy {
+  display: inherit;
+	background-color: blue;
+	height: 350px;
+	width: 550px;
+  border-radius: 2px;
+  margin: 150px;
+  box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+}
+
+.quote-div {
+  height: 250px;
+  width: 500px;
+  background: turquoise;
+  text-align: center;
+  margin: 20px auto;
+
 }

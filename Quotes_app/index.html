@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Quotes App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" 
-    charset="utf-8"></script>
-    <script src="app.js" charset ="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
 </head>
-<body>
-    <h1>"Quote of the Day"</h1>
-    
 
-    
-    
+<body>
+    <!-- <h1>"THE BEST QUOTE OF THE DAY SITE"</h1> -->
+    <h2>Type in one of the following topics to get your related quotes:</h2>
+    <div class="topics">
+        <h3>Love</h3>
+        <h3>Happiness</h3>
+        <h3>Time</h3>
+    </div>
+
+
+
+
+
+
+
+
     <div class="container">
-</div>
-<form>
-    <input id ="input" type="text" placeholder="keyword"/>
-    <!-- <input id="input" type="text" placeholder="quotes of the day"/> -->
-    
-    <button id="search">Search</button>
-    <button id="quoteOftheDay">Quote of the Day</button>
-    
-    
-    
-</form>
-    
+    </div>
+    <!-- <button id="openModal">Love Quotes</button>
+        <div id="modal">
+            <div id="modal-textbox">
+                <a id="close" href="#">Close</a>
+            </div> -->
+
+    </div>
+    <form>
+        <!-- <h4>or</h4> -->
+        <!-- <button id="quoteOftheDay">Quote of the Day</button> -->
+        <input id="input" type="text" placeholder="enter keyword" />
+        <!-- <input id="input" type="text" placeholder="quote of the day"/> -->
+        <button id="search">Search</button>
+        <div class="quote-div">
+
+        </div>
+        <h3>Get an Image to compliment your Quote</h3>
+        <button id="openModalLove">Love</button>
+        <button id="openModalHappy">Happiness</button>
+        <button id="openModalTime">Time</button>
+
+        <div id="modalLove">
+          <div id="text-box-love">
+            <a id="close-love" href="#">Close</a>
+            <img src="https://i.imgur.com/Lognewd.jpg" title="source: imgur.com" /></a>
+            </div>
+        <div id="modalHappy">
+        <div id="text-box-happy">
+         <a id="close-happy" href="#">Close</a>
+        <img src="https://i.imgur.com/nOgS2ij.jpg" title="source: imgur.com"/>
+       </div>
+
+
+        </div>
+        <!-- <button>Love</button><br><button>Time</button><br><button>Happy</button> -->
+    </form>
+
+
 </body>
+
 </html>
