@@ -59,32 +59,33 @@ $(() => {
     const $closeBtnLove = $('#close-love');
 
     const openModalLove=()=>{
-        
         $modalLove.css('display', 'block')
     
     }
     const closeModalLove = () => {
-        $modalLove.css('display', 'block');
+        $modalLove.css('display', 'none'); {
+
+    }
+    
+    // const $openBtnHappy=$('#openModalHappy');
+    // const $modalHappy = $('#modalHappy');
+    // const $closeBtnHappy = $('#close-happy');
+    
+    // const openModalHappy=()=>{
+    // $modalHappy.css('display', 'block')
+    //     }
+    //     const closeModalHappy = () => {
+    //         $modalHappy.css('display', 'block');
+    // }
+
+
 
     }
 
+    $('#quoteOftheDay').on('click', (event) => {
+        event.preventDefault()
 
-    const $openBtnHappy=$('#openModalHappy');
-    const $modalHappy = $('#modalHappy');
-    const $closeBtnHappy = $('#close-happy');
-
-    const openModalHappy=()=>{
-        $modalHappy.css('display', 'block')
-    }
-    const closeModalHappy = () => {
-        $modalHappy.css('display', 'block');
-
-    }
-
-    // $('#quoteOftheDay').on('click', (event) => {
-    //     event.preventDefault()
-
-    //     getQuotes()
+        getQuotes()
 
     })
     $('#search').on('click', (event) => {
@@ -100,8 +101,8 @@ $(() => {
     $openBtnLove.on('click', openModalLove);
     $closeBtnLove.on('click', closeModalLove);
 
-    $openBtnHappy.on('click', openModalHappy);
-    $closeBtnHappy.on('click', closeModalHappy);
+    // $openBtnHappy.on('click', openModalHappy);
+    // $closeBtnHappy.on('click', closeModalHappy);
 
 })
 
